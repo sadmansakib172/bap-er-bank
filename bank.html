@@ -18,15 +18,15 @@
             <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-lg">
                 <h2 class="text-2xl">Deposit</h2>
-                  <h4 class="text-5xl">$00</h4>
+                  <h4 class="text-5xl">$<span id="deposit-total">00</span></h4>
                </div>
                <div class="bg-orange-400 p-8 rounded-lg">
-                  <h2 class="text-2xl">Deposit</h2>
-                  <h4 class="text-5xl">$00</h4>
+                  <h2 class="text-2xl">Withdraw</h2>
+                  <h4 class="text-5xl">$ <span id="withdraw-total">00</span></h4>
                </div>
                <div class="bg-lime-400 p-8 rounded-lg">
-                  <h2 class="text-2xl">Deposit</h2>
-                  <h4 class="text-5xl">$00</h4>
+                  <h2 class="text-2xl">Balance</h2>
+                  <h4 class="text-5xl">$<span id="balance-total">1240</span></h4>
                </div>
             </div>
         </section>
@@ -34,16 +34,18 @@
             <div class="grid grid-cols-2 gap-3 w-9/12 mx-auto">
                 <div class="bg-neutral-500 p-8 rounded-lg">
                 <h2 class="text-2xl mb-4 text-white">Please Deposit</h2>
-                    <input class="w-9/12 block mb-2 px-3" type="email" name="" id="deposit-field" placeholder="Your Email">
+                    <input class="w-9/12 block mb-2 px-3" type="text" name="" id="deposit-field" placeholder="Your Email">
                     <button id="btn-deposit" class="bg-teal-500 hover:bg-sky-600 px-8 py-2 rounded text-white font-medium">Submit</button>
                </div>
                <div class="bg-pink-400 p-8 rounded-lg">
                   <h2 class="text-2xl mb-4 text-white">Please Withdraw</h2>
-                    <input class="w-9/12 block mb-2 px-3" type="email" name="" id="withdraw-field" placeholder="Your Email">
+                    <input class="w-9/12 block mb-2 px-3" type="text" name="" id="withdraw-field" placeholder="Your Email">
                     <button id="btn-withdraw" class="bg-teal-500 hover:bg-sky-600 px-8 py-2 rounded text-white font-medium">Submit</button>
                </div>
             </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 </html>
