@@ -4,9 +4,9 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     const userPasswordField = document.getElementById('user-password');
     const userPassword = userPasswordField.value;
     if(userEmail === 'sakib@gmail.com' && userPassword === '12345'){
-        console.log('valid user');
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('invalid user')
+        alert('Takar ki gach lagai rakhci ami!!');
     }
 })
